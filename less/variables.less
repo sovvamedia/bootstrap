@@ -2,6 +2,13 @@
 // Variables
 // --------------------------------------------------
 
+@border-base-vertical: 6px;
+@border-base-horizontal: 12px;
+
+@border-narrow: 1px;
+@border-narrow-vertical: @border-narrow;
+@border-narrow-horizontal: @border-narrow;
+
 
 //== Colors
 //
@@ -9,17 +16,16 @@
 
 @gray-darker:            lighten(#000, 13.5%); // #222
 @gray-dark:              lighten(#000, 20%);   // #333
+@gray-muted:             lighten(#000, 30%);   // #4d4d4d
 @gray:                   lighten(#000, 33.5%); // #555
 @gray-light:             lighten(#000, 60%);   // #999
-//@gray-lighter:           lighten(#000, 93.5%); // #eee
-@gray-lighter-border:   #e1e1e8;
-@gray-lighter:          #f7f7f9;
+@gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-primary:         #428bca;
-@brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
+@brand-primary:         #3879D9;
+@brand-success:         #1A9B5F;
+@brand-info:            #FF6600;
+@brand-warning:         #CCC911;
+@brand-danger:          #D6126B;
 
 
 //== Scaffolding
@@ -27,7 +33,7 @@
 // ## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               #f8f8f8;
 //** Global text color on `<body>`.
 @text-color:            @gray-dark;
 
@@ -47,19 +53,19 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          15px;
-@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
-@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // 18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // 12px
 
-@font-size-h1:            floor((@font-size-base * 2.25));
-@font-size-h2:            floor((@font-size-base * 2.1));
-@font-size-h3:            ceil((@font-size-base * 1.5));
-@font-size-h4:            ceil((@font-size-base * 1.25));
-@font-size-h5:            @font-size-base;
-@font-size-h6:            ceil((@font-size-base * 0.85));
+@font-size-h1:            floor((@font-size-base * 1.6)); // 22px
+@font-size-h2:            ceil((@font-size-base * 1.4)); // 20px
+@font-size-h3:            @font-size-large; // 18px
+@font-size-h4:            @font-size-base; // 14px
+@font-size-h5:            @font-size-small; // 12px
+@font-size-h6:            ceil((@font-size-base * 0.7)); // 10px
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.4; // 21/15
+@line-height-base:        1.5; // 21/15
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // 21px
 
