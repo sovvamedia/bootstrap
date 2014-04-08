@@ -5,10 +5,10 @@
  * Copyright 2011-2014 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
+'use strict';
 
+var $ = require('jquery');
 
-+function ($) {
-  'use strict';
 
   // COLLAPSE PUBLIC CLASS DEFINITION
   // ================================
@@ -167,4 +167,4 @@
     $target.collapse(option)
   })
 
-}(jQuery);
+module.exports = Collapse;

@@ -106,7 +106,6 @@ var $ = require('jquery');
 
     return $parent && $parent.length ? $parent : $this.parent()
   }
-  /*
 
   // DROPDOWN PLUGIN DEFINITION
   // ==========================
@@ -138,7 +137,6 @@ var $ = require('jquery');
   // APPLY TO STANDARD DROPDOWN ELEMENTS
   // ===================================
 
-  */
   $(document)
     .on('click.bs.dropdown.data-api', clearMenus)
     .on('click.bs.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
